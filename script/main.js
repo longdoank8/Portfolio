@@ -77,7 +77,7 @@ $(document).ready(function () {
 const typedTextSpan = document.querySelector(".typed-text");
 const cursorSpan = document.querySelector(".cursor");
 
-const textArray = ["20 years old.", "EE student at TU Berlin.", "Passionate programmer."];
+const textArray = ["22 years old.", "EE student at TU Berlin.", "Passionate programmer."];
 const typingDelay =  100; // in millisekunden
 const erasingDelay = 50;
 const newTextDelay = 1500;
