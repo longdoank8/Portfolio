@@ -54,7 +54,8 @@
 /*Start global*/
 * {
   margin: 0;
-  padding: 0;
+  padding: 0; 
+  list-style: none;
   box-sizing: border-box;
 }
 
@@ -233,8 +234,10 @@ header::before{
   top: 20rem;
   right: 0rem;
   /* left: 0; */
-  width: 28rem;
-  height: 50vh;
+  /* width: 28rem;
+  height: 45vh; */
+  width: 250px;
+  height: 50%;
   display: column;
   justify-content: space-between;
   padding: 1.6rem;
@@ -242,19 +245,29 @@ header::before{
   transform: translateX(100%);
   /* translateX(100%) sidebar kommt von rechts, -100% von links  */
   transition: transform .3s cubic-bezier(.95, .05, .795, .035);
+  opacity: 0.8;
 }
 
+.nav-list {
+  list-style: none;
+  width: 100%;
+  height: 100%;
+}
+
+
 .sidebar ul a{
+  box-sizing: border-box;
+  padding-top: 8px;
   transition: 0.5s;
 }
 
 
-.nav-list{
+/* .nav-list{
   list-style: none;
   opacity: 0;
   transform: translateX(100%);
   transition: transform 0.5s ease-in;
-}
+} */
 
 .nav-active{
   transform: translateX(0%);
@@ -331,14 +344,14 @@ header.active::before{
   transform: translateX(0);
 }
 
-.active .zoom-content{
+/* .active .zoom-content{
   transform: translate3d(0, 0, -25rem);
-  /* -25 Seite weiter weg, 25 Seite näher ran */
-}
+} */
+/* -25 Seite weiter weg, 25 Seite näher ran */
 
-.sidebar ul li:hover a {
+/* .sidebar ul li:hover a {
   padding-left: 70px;
-}
+} */
 
 .menu-toggler {
   position: fixed;
