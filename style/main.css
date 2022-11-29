@@ -1097,15 +1097,6 @@ a.contact-link {
 }
 
 
-
-
-
-
-
-
-
-
-
 /* TEXT */
 
 #logo {
@@ -1184,3 +1175,11 @@ a.contact-link {
   }
 }
 /* Effects end */
+
+/* gallery */
+
+.container .carousel{
+  width: 300px;
+  margin: 100px auto 0;
+  overflow: visible;
+}
